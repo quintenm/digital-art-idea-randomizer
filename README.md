@@ -1,15 +1,15 @@
 # DIGITAL ART IDEA RANDOMIZER
-Generate new ideas for art project, with a style suggestion, in multiple languages
+Generate new ideas for art project, with a style suggestion, in multiple languages.
 
 ## Demo
-[Go to demowebsite](https://quinten.mares.be/devroom/digital-art-idea-randomizer/)
+[Visit demo site](https://quinten.mares.be/devroom/digital-art-idea-randomizer/)
 
 ## Selected words
-* 227 Adjectives
-* 201 subjects
+* 252 adjectives
+* 673 subjects
 * 635 verbs
-* 36 art styles
-* 17 artists
+* 38 art styles
+* 64 artists or art movements
 
 ## Randomizer in languages
 * 109 languages
