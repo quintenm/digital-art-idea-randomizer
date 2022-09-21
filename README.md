@@ -10,6 +10,7 @@ Generate new ideas for art project, with a style suggestion, in multiple languag
 * 635 Verbs
 * 49 Art styles
 * 65 Artists or art movements
+
 (That are 343.003.670.100 posible combinations)
 
 ## Digital art idea randomizer translate in 109 languages (with Google Translate open api)
