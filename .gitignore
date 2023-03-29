@@ -1,4 +1,4 @@
 .DS_Store
 prepros.config
-/js/script.js
-/scss
+# /js/script.js
+# /scss

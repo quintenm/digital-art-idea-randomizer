@@ -1,0 +1,151 @@
+@import "reset";
+$primaryColor: #FFF;
+$primaryColorNeg: #000;
+$deviceWidth: 768px;
+
+body {
+  background-color: $primaryColorNeg;
+  font-size: 16px;
+  line-height: 1.2;
+  color: $primaryColor;
+  font-family: "Verdana","Helvetica", "Arial", sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 95vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    &.title {
+
+      h1 {
+        font-size: 2rem;
+        @media (max-width: $deviceWidth) {
+          font-size: 1rem;
+        }
+        font-weight: 900;
+        text-align: center;
+        line-height: 1;
+
+        small {
+          font-weight: 500;
+          border-top: 10px solid $primaryColor;
+          border-bottom: 10px solid $primaryColor;
+          @media (max-width: $deviceWidth) {
+            border-top: 3px solid $primaryColor;
+            border-bottom: 3px solid $primaryColor;
+          }
+        }
+      }
+    }
+
+    &.sentence {
+      flex-direction: column;
+
+      p {
+        font-size: 2rem;
+        text-align: center;
+        width:90vw;
+        margin-left:5vw;
+        margin-right:5vw;
+        @media (max-width: $deviceWidth) {
+          font-size: 1rem;
+        }
+      }
+    }
+
+    &.footer {
+      color: white;
+      flex-direction: column;
+      p{
+        text-align: center;
+        font-size: 1.5rem;
+        line-height: 2;
+        @media (max-width: $deviceWidth) {
+          font-size: .8rem;
+        }
+        small
+        {
+          font-size: 1rem;
+          @media (max-width: $deviceWidth) {
+            font-size: .5rem;
+          }
+        }
+      }
+
+
+      a,
+      a:active,
+      a:hover,
+      a:link,
+      a:visited {
+        color: white;
+      }
+    }
+    &.button {
+      @media (max-width: $deviceWidth) {
+        flex-direction: column;
+        width:90vw;
+        margin-left: 5vw;
+        margin-right: 5vw;
+      }
+      button {
+        padding: 15px 40px;
+        background-color: $primaryColor;
+        color: $primaryColorNeg;
+        font-size: 2rem;
+        border: none;
+        @media (max-width: $deviceWidth) {
+          font-size: 1rem;
+        }
+      }
+      select {
+        background-color: $primaryColor;
+        border: 2px solid $primaryColorNeg;
+        border-radius: 0px;
+        display: inline-block;
+        font: inherit;
+        font-size: 2rem;
+        line-height: 1.2em;
+        padding: 15px 3.5em 15px 1em;
+        margin: 0;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        background-image: linear-gradient(45deg, transparent 50%, lighten($primaryColorNeg,50%) 50%), linear-gradient(135deg, lighten($primaryColorNeg,50%) 50%, transparent 50%), linear-gradient(to right, lighten($primaryColorNeg,50%), lighten($primaryColorNeg,50%));
+        background-position: calc(100% - 25px) calc(.5em + 15px), calc(100% - 15px) calc(.5em + 15px), calc(100% - 1.7em) 10px;
+        background-size: 10px 10px, 10px 10px, 2px calc(100% - 20px);
+        background-repeat: no-repeat;
+        @media (max-width: $deviceWidth) {
+          font-size: 1rem;
+          background-position: calc(100% - 20px) calc(.5em + 12.5px), calc(100% - 10px) calc(.5em + 12.5px), calc(100% - 2.5em) 10px;
+        }
+        &:active {
+          background-image: linear-gradient(45deg, lighten($primaryColorNeg,50%) 50%, transparent 50%), linear-gradient(135deg, transparent 50%, lighten($primaryColorNeg,50%) 50%), linear-gradient(to right, lighten($primaryColorNeg,50%), lighten($primaryColorNeg,50%));
+          background-position: calc(100% - 15px) calc(.5em + 15px), calc(100% - 25px) calc(.5em + 15px), calc(100% - 1.7em) 10px;
+          background-size: 10px 10px, 10px 10px, 2px calc(100% - 20px);
+          background-repeat: no-repeat;
+          border-color: lighten($primaryColorNeg,50%);
+          outline: 0;
+          @media (max-width: $deviceWidth) {
+            background-position: calc(100% - 10px) calc(1em + 10px), calc(100% - 20px) calc(1em + 10px), calc(100% - 2.5em) 10px;
+          }
+        }
+        &:-moz-focusring {
+          color: transparent;
+          text-shadow: 0 0 0 $primaryColorNeg;
+        }
+      }
+    }
+  }
+}
